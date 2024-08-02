@@ -1,0 +1,199 @@
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+*{
+    margin: 0; padding: 0;
+}
+
+/* ========================================================== */
+:root{
+    --color1: #E6533C;
+    --color2: #fff;
+    --color3: rgba(255, 255, 255, 0.5);
+}
+body{
+    background-color: #000000;
+    margin: 0 auto;
+}
+.section-container{
+    max-width: 1060px;
+    margin: 0 auto;
+    border: 1px solid salmon;
+}
+.display{
+    display: flex;
+}
+
+.btn{
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--color2);
+    line-height: 22px;
+    background-color: #E6533C;
+    padding: 16px 46.5px;
+    border-radius: 50px;
+    border: none;
+}
+.btn2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--color2);
+    line-height: 22px;
+    background: transparent;
+    border: 1px solid white;
+    padding: 16px 46.5px;
+    margin-left: 14px;
+    border-radius: 50px;
+}
+
+.description{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color3);
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
+
+/* ====================nav styles============================ */
+header{
+    width: 100%;
+    background-image: linear-gradient(rgba(17, 17, 17, 1), rgba(119, 119, 119, 0));
+}
+.nav-bar{
+    padding-top: 57px;
+    justify-content: space-between;
+    max-width: 1060px;
+    text-align: center;
+    margin: 0px auto;
+    margin-bottom: 32px;
+}
+.logo{
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: var(--color1);
+    font-style: italic;
+}
+ul{
+    max-width: 465px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+    gap: 47px;
+    padding-right: 24px;
+    padding-left: 4px;
+}
+
+ul li a{
+    text-decoration: none;
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #fff;
+}
+ul .active{
+    font-weight: 600;
+    border: 46px;
+    border-radius: 50px;
+    background-color: var(--color1);
+    padding: 8px 20px;
+}
+ul li{
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+}
+/* =======================banner styles====================== */
+
+#miama-font{
+    font-family: 'MiaMa', sans-serif;
+    font-weight: 400;
+    font-size: 8.875rem;
+}
+
+.banner{
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1060px;
+    position: relative;
+    margin: 0 auto;
+}
+.banner-content{
+    max-width: 520px;
+}
+.banner h1{
+    font-size: 4.875rem;
+    font-weight: 900;
+    line-height: 120%;
+    color: var(--color2);
+    margin-bottom: 28px;
+}
+.banner .description{
+    margin-bottom: 28px;
+}
+.banner-img img{
+    border: #E6533C 1px solid;
+    width: 100%;
+}
+.card{
+    padding: 20px 23px;
+    background-color: rgba(48, 48, 48, 0.54);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 574px;
+    top: 421px;
+}
+.card2{
+    padding: 17px 23px;
+    background-color: rgba(48, 48, 48, 0.54);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: -74px;
+    top: 125px;
+}
+.card-container{
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid white; */
+    gap: 12px;
+}
+.card-container .dots{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #E6533C;
+}
+
+    
+.card-container h3{
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    color: var(--color2);
+}
+.card2 h3{
+    font-size: 2.5rem;
+    font-weight: 900;
+    /* line-height: 40px; */
+    letter-spacing: 0.3px;
+    color: var(--color2);
+}
+.card-container, .card2 p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color3);
+    letter-spacing: 0.5px;
+    /* line-height: 24px; */
+}
