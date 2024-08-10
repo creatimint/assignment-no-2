@@ -224,6 +224,7 @@ ul li{
     letter-spacing: 0.5px;
     /* line-height: 24px; */
 }
+
 /* ==================Change Your Habits section============== */
 .second-section .section-container{
     flex-direction: column;
@@ -271,7 +272,7 @@ ul li{
     margin: 0 auto;
 }
 .third-section-content{
-    padding: 30px 43px;
+    margin: 30px 43px;
     width: 100%;
     align-items: center;
     justify-content: space-between;
@@ -550,16 +551,16 @@ footer{
         font-size: 2rem;
     }
     .nav-bar{
-        max-width: 353px;
+        /* max-width: 353px; */
         padding-top: 52px;
-        border: #E6533C 1px solid;
+        /* border: #E6533C 1px solid; */
         max-width: calc(100% - 40px);
     }
     .banner{
         flex-direction: column;
     }
     .banner-content{
-        border: #E6533C 1px solid;
+        /* border: #E6533C 1px solid; */
         max-width: 353px;
     }
     .banner-content > h1{
@@ -586,12 +587,10 @@ footer{
     .btn-container span{
         display: none;
     }
-    .btn-container{
-        /* width: 100%; */
-    }
+
     .banner-img{
         position: relative;
-        border: #E6533C 1px solid;
+        /* border: #E6533C 1px solid; */
     }
     .card{
         left: 32px;
@@ -618,5 +617,43 @@ footer{
     }
     .card2 p{
         font-size: 0.6125rem;
+    }
+
+    /* ==============second section============ */
+
+    .sub-headline{
+        font-size: 2rem;
+    }
+    .description2{
+        /* max-width: 316px; */
+    }
+    .item-container{
+        grid-template-columns: 1fr;
+    }
+    .third-section{
+        width: 353px;
+    }
+    .third-section-content{
+        flex-direction: column;
+        max-width: 287px;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        margin: 35px auto;
+    }
+   
+    .third-section-content .img{
+        width: 287px;
+        height: 170px;
+        margin-top: 31px;
+        /* border: #E6533C 1px solid; */
+        border-radius: 18px;
+    }
+    .third-section-content img{
+        object-fit: cover;
+        /* object-position: 50% 50%; */
+    }
+    .third-section-content .content, .long-btn, img{
+        width: 100%;
     }
 }
