@@ -561,7 +561,7 @@ footer{
     }
     .banner-content{
         /* border: #E6533C 1px solid; */
-        max-width: 353px;
+        /* max-width: 353px; */
     }
     .banner-content > h1{
         font-size: 2.25rem;
@@ -576,7 +576,7 @@ footer{
     }
     .btn{
         font-size: 1.125rem;
-        padding: 16px 30px;
+        /* padding: 16px 30px; */
         border: none;
     }
     .btn2{
