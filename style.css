@@ -657,7 +657,7 @@ footer{
         font-size: 2rem;
     }
     .description2{
-        /* max-width: 316px; */
+        max-width: 316px;
     }
     .item-container{
         grid-template-columns: 1fr;
