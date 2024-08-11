@@ -84,7 +84,9 @@ a{
 /* ====================nav styles============================ */
 header{
     width: 100%;
-    background-image: linear-gradient(rgba(17, 17, 17, 1), rgba(119, 119, 119, 0));
+    background: linear-gradient(to bottom,
+    rgba(17, 17, 17, 1)10% 65%, 
+    rgba(119, 119, 119, 0) 100%);
 }
 .nav-bar .menu{
     display: none;
@@ -462,6 +464,7 @@ thead td{
     object-fit: cover;
     overflow: hidden;
     border-radius: 8px;
+    display: block;
 }
 .our-team-section .image-container{
     grid-template-columns: repeat(3, 1fr);
@@ -471,7 +474,32 @@ thead td{
     border-radius: 8px;
     /* border: #E6533C 1px solid; */
 }
-
+.trainer{
+    position: relative;
+    text-align: left;
+    display: inline-block;
+}
+.overlay, .trainer-name{
+    position: absolute;
+}
+.trainer-name{
+    bottom: -40px;
+    left: 20px;
+    color: var(--color2);
+}
+.trainer-name h4{
+    font-size: 1.25rem;
+    font-weight: 900;
+}
+.trainer-name p{
+    color: var(--color3);
+    font-weight: 400;
+    font-size: 0.875rem;
+}
+.overlay{
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 0;
+}
 
 /* =============Footer section=============================== */
 footer{
@@ -537,7 +565,10 @@ footer{
 
 /* ===================media query============================= */
 @media screen and (max-width:576px){
-    header{
+    section{
+        margin: 40px auto;
+    }
+    header, .fourth-section{
         /* padding: 20px; */
         width: 100%;
         margin: 0 auto;
@@ -558,6 +589,7 @@ footer{
     }
     .banner{
         flex-direction: column;
+        gap: 48px;
     }
     .banner-content{
         /* border: #E6533C 1px solid; */
@@ -630,8 +662,10 @@ footer{
     .item-container{
         grid-template-columns: 1fr;
     }
+
+    /*==============third section=============== */
     .third-section{
-        width: 353px;
+        max-width: calc(100% - 40px);
     }
     .third-section-content{
         flex-direction: column;
@@ -655,5 +689,66 @@ footer{
     }
     .third-section-content .content, .long-btn, img{
         width: 100%;
+    }
+
+    /* ==========fourth section===================== */
+    .bmi-section{
+        max-width: calc(100% - 40px);
+        /* border: #E6533C 1px solid; */
+        margin: 32px auto;
+    }
+    .content-container{
+        flex-direction: column;
+        padding: 35px 20px;
+        gap: 42px;
+    }
+    .content-container h3{
+        font-size: 1rem;
+        margin-bottom: 23px;
+    }
+    .form-content .btn{
+        width: 60%;
+    }
+    /* ==========sixth section===================== */
+    .sixth-section, .footer-txt-container, .footer-line{
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        margin: 0px 20px;
+    }
+    .sixth-section{
+        margin-top: 66px;
+    }
+    .sixth-section .img-container .img-container{
+        width: 80%;
+        /* border: #E6533C 1px solid; */
+        margin: 0 auto;
+        object-fit: cover;
+    }
+    
+    .our-team-section{
+        margin-top: 66px;
+        margin-bottom: 66px;
+    }
+    .our-team-section > p{
+        max-width: 309px;
+        margin-bottom: 37px;
+    }
+    .footer-txt-container .about > p{
+        max-width: 317px;
+    }
+
+    .footer-txt-container,
+    .our-team-section > .image-container{
+        grid-template-columns: 1fr;
+    }
+    .footer-txt-container{
+        /* grid-template-columns: 50% 25% 25%; */
+        margin-top: 20px;
+        justify-content: space-between;
+    }
+    .footer-line{
+        margin-bottom: 22px;
+        margin-top: 72px;
     }
 }
